@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lilt 家計簿 - 家計簿の新定番</title>
+<meta name="description" content="Lilt は、広告なし・銀行口座の連携なしで使える iPhone の家計簿アプリ。金額とカテゴリを選ぶだけで記録でき、予算の残りと月末の見込みがひと目でわかります。">
+<meta name="theme-color" content="#1A6DFF">
+<meta name="apple-itunes-app" content="app-id=6761905992">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lilt 家計簿 - 家計簿の新定番">
+<meta property="og:description" content="広告なし・銀行連携なし。予算の残りと月末の見込みがひと目でわかる家計簿アプリ。">
+<meta property="og:image" content="https://liltapp.github.io/assets/og.png">
+<meta property="og:url" content="https://liltapp.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true"><defs>
+<linearGradient id="sd" x1="0" y1=".5" x2="0" y2="1"><stop offset="0" stop-color="#EB6B9E"/><stop offset="1" stop-color="#C74780"/></linearGradient>
+<linearGradient id="fc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFCCDE"/><stop offset="1" stop-color="#FF8AB8"/></linearGradient>
+<linearGradient id="ns" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9E1A54"/><stop offset="1" stop-color="#DB5C8F"/></linearGradient>
+<radialGradient id="gold" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FFF3B8"/><stop offset=".4" stop-color="#FFD24A"/><stop offset="1" stop-color="#EFA300"/></radialGradient></defs><symbol id="s-snout" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><ellipse cx="100" cy="104" rx="64" ry="52"/></g><g transform="translate(100 100) scale(.2) translate(-512 -500)"><path d="M222 478A290 205 0 0 1 802 478V552A290 205 0 0 1 222 552Z" fill="url(#sd)"/><ellipse cx="512" cy="478" rx="290" ry="205" fill="url(#fc)"/><ellipse cx="460" cy="355" rx="140" ry="44" fill="#fff" opacity=".4"/><ellipse cx="412" cy="486" rx="50" ry="82" transform="rotate(10 412 486)" fill="url(#ns)"/><ellipse cx="612" cy="486" rx="50" ry="82" transform="rotate(-10 612 486)" fill="url(#ns)"/></g></symbol><symbol id="i-snout" viewBox="0 0 200 200" overflow="visible"><g transform="translate(100 100) scale(.2) translate(-512 -500)"><path d="M222 478A290 205 0 0 1 802 478V552A290 205 0 0 1 222 552Z" fill="url(#sd)"/><ellipse cx="512" cy="478" rx="290" ry="205" fill="url(#fc)"/><ellipse cx="460" cy="355" rx="140" ry="44" fill="#fff" opacity=".4"/><ellipse cx="412" cy="486" rx="50" ry="82" transform="rotate(10 412 486)" fill="url(#ns)"/><ellipse cx="612" cy="486" rx="50" ry="82" transform="rotate(-10 612 486)" fill="url(#ns)"/></g></symbol><symbol id="s-coin" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><circle cx="100" cy="100" r="74"/></g><circle cx="100" cy="106" r="74" fill="#D99A00"/><circle cx="100" cy="100" r="74" fill="url(#gold)"/><circle cx="100" cy="100" r="56" fill="none" stroke="#C58600" stroke-opacity=".45" stroke-width="5"/><text x="100" y="128" text-anchor="middle" font-family="'M PLUS 1',sans-serif" font-weight="900" font-size="82" fill="#B57200">¥</text></symbol><symbol id="i-coin" viewBox="0 0 200 200" overflow="visible"><circle cx="100" cy="106" r="74" fill="#D99A00"/><circle cx="100" cy="100" r="74" fill="url(#gold)"/><circle cx="100" cy="100" r="56" fill="none" stroke="#C58600" stroke-opacity=".45" stroke-width="5"/><text x="100" y="128" text-anchor="middle" font-family="'M PLUS 1',sans-serif" font-weight="900" font-size="82" fill="#B57200">¥</text></symbol><symbol id="s-receipt" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><path d="M46 22h108v150l-18-12-18 12-18-12-18 12-18-12-18 12z"/></g><path d="M46 22h108v150l-18-12-18 12-18-12-18 12-18-12-18 12z" fill="#FFFDF6"/><rect x="64" y="46" width="72" height="9" rx="4.5" fill="#C9CFDA"/><rect x="64" y="68" width="50" height="9" rx="4.5" fill="#C9CFDA"/><rect x="64" y="90" width="62" height="9" rx="4.5" fill="#C9CFDA"/><rect x="64" y="118" width="72" height="5" rx="2.5" fill="#E2E6EE"/><text x="136" y="148" text-anchor="end" font-family="'M PLUS 1',sans-serif" font-weight="900" font-size="26" fill="#1A6DFF">¥1,280</text></symbol><symbol id="i-receipt" viewBox="0 0 200 200" overflow="visible"><path d="M46 22h108v150l-18-12-18 12-18-12-18 12-18-12-18 12z" fill="#FFFDF6"/><rect x="64" y="46" width="72" height="9" rx="4.5" fill="#C9CFDA"/><rect x="64" y="68" width="50" height="9" rx="4.5" fill="#C9CFDA"/><rect x="64" y="90" width="62" height="9" rx="4.5" fill="#C9CFDA"/><rect x="64" y="118" width="72" height="5" rx="2.5" fill="#E2E6EE"/><text x="136" y="148" text-anchor="end" font-family="'M PLUS 1',sans-serif" font-weight="900" font-size="26" fill="#1A6DFF">¥1,280</text></symbol><symbol id="s-chart" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><rect x="28" y="28" width="144" height="144" rx="36"/></g><rect x="28" y="28" width="144" height="144" rx="36" fill="#D4FF4F"/><rect x="54" y="104" width="22" height="44" rx="8" fill="#0B2A8A"/><rect x="89" y="78" width="22" height="70" rx="8" fill="#1A6DFF"/><rect x="124" y="54" width="22" height="94" rx="8" fill="#0B2A8A"/></symbol><symbol id="i-chart" viewBox="0 0 200 200" overflow="visible"><rect x="28" y="28" width="144" height="144" rx="36" fill="#D4FF4F"/><rect x="54" y="104" width="22" height="44" rx="8" fill="#0B2A8A"/><rect x="89" y="78" width="22" height="70" rx="8" fill="#1A6DFF"/><rect x="124" y="54" width="22" height="94" rx="8" fill="#0B2A8A"/></symbol><symbol id="s-calendar" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><rect x="30" y="34" width="140" height="136" rx="30"/></g><rect x="30" y="34" width="140" height="136" rx="30" fill="#fff"/><path d="M30 64a30 30 0 0 1 30-30h80a30 30 0 0 1 30 30v12H30z" fill="#FF5A64"/><rect x="64" y="22" width="12" height="30" rx="6" fill="#33405A"/><rect x="124" y="22" width="12" height="30" rx="6" fill="#33405A"/><rect x="50" y="92" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="77" y="92" width="19" height="17" rx="5" fill="#FF8A90"/><rect x="104" y="92" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="131" y="92" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="50" y="117" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="77" y="117" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="104" y="117" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="131" y="117" width="19" height="17" rx="5" fill="#FF8A90"/><rect x="50" y="142" width="19" height="17" rx="5" fill="#FF8A90"/><rect x="77" y="142" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="104" y="142" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="131" y="142" width="19" height="17" rx="5" fill="#EEF1F6"/></symbol><symbol id="i-calendar" viewBox="0 0 200 200" overflow="visible"><rect x="30" y="34" width="140" height="136" rx="30" fill="#fff"/><path d="M30 64a30 30 0 0 1 30-30h80a30 30 0 0 1 30 30v12H30z" fill="#FF5A64"/><rect x="64" y="22" width="12" height="30" rx="6" fill="#33405A"/><rect x="124" y="22" width="12" height="30" rx="6" fill="#33405A"/><rect x="50" y="92" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="77" y="92" width="19" height="17" rx="5" fill="#FF8A90"/><rect x="104" y="92" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="131" y="92" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="50" y="117" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="77" y="117" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="104" y="117" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="131" y="117" width="19" height="17" rx="5" fill="#FF8A90"/><rect x="50" y="142" width="19" height="17" rx="5" fill="#FF8A90"/><rect x="77" y="142" width="19" height="17" rx="5" fill="#FFD3D6"/><rect x="104" y="142" width="19" height="17" rx="5" fill="#EEF1F6"/><rect x="131" y="142" width="19" height="17" rx="5" fill="#EEF1F6"/></symbol><symbol id="s-trend" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><rect x="28" y="28" width="144" height="144" rx="36"/></g><rect x="28" y="28" width="144" height="144" rx="36" fill="#0B2A8A"/><path d="M54 136 L84 108 L104 120" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 120 L144 70" stroke="#D4FF4F" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="1 20"/><circle cx="146" cy="66" r="12" fill="#D4FF4F"/></symbol><symbol id="i-trend" viewBox="0 0 200 200" overflow="visible"><rect x="28" y="28" width="144" height="144" rx="36" fill="#0B2A8A"/><path d="M54 136 L84 108 L104 120" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 120 L144 70" stroke="#D4FF4F" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="1 20"/><circle cx="146" cy="66" r="12" fill="#D4FF4F"/></symbol><symbol id="s-sparkle" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><path d="M100 20 C108 76 124 92 180 100 C124 108 108 124 100 180 C92 124 76 108 20 100 C76 92 92 76 100 20Z"/></g><path d="M100 20 C108 76 124 92 180 100 C124 108 108 124 100 180 C92 124 76 108 20 100 C76 92 92 76 100 20Z" fill="#D4FF4F"/></symbol><symbol id="i-sparkle" viewBox="0 0 200 200" overflow="visible"><path d="M100 20 C108 76 124 92 180 100 C124 108 108 124 100 180 C92 124 76 108 20 100 C76 92 92 76 100 20Z" fill="#D4FF4F"/></symbol><symbol id="s-heart" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><path d="M100 166 C30 120 22 82 40 58 C58 34 92 38 100 66 C108 38 142 34 160 58 C178 82 170 120 100 166Z"/></g><path d="M100 166 C30 120 22 82 40 58 C58 34 92 38 100 66 C108 38 142 34 160 58 C178 82 170 120 100 166Z" fill="#FF8DB8"/><ellipse cx="68" cy="72" rx="14" ry="9" fill="#fff" opacity=".55" transform="rotate(-30 68 72)"/></symbol><symbol id="i-heart" viewBox="0 0 200 200" overflow="visible"><path d="M100 166 C30 120 22 82 40 58 C58 34 92 38 100 66 C108 38 142 34 160 58 C178 82 170 120 100 166Z" fill="#FF8DB8"/><ellipse cx="68" cy="72" rx="14" ry="9" fill="#fff" opacity=".55" transform="rotate(-30 68 72)"/></symbol><symbol id="s-check" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><circle cx="100" cy="100" r="70"/></g><circle cx="100" cy="100" r="70" fill="#D4FF4F"/><path d="M68 102 L92 126 L134 78" stroke="#0B2A8A" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-check" viewBox="0 0 200 200" overflow="visible"><circle cx="100" cy="100" r="70" fill="#D4FF4F"/><path d="M68 102 L92 126 L134 78" stroke="#0B2A8A" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="s-bank" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><circle cx="100" cy="100" r="74"/></g><circle cx="100" cy="100" r="74" fill="#D4FF4F"/><path d="M100 46 L148 72 H52 Z" fill="#0B2A8A"/><rect x="56" y="76" width="88" height="8" rx="3" fill="#0B2A8A"/><rect x="62" y="90" width="12" height="40" rx="3" fill="#0B2A8A"/><rect x="94" y="90" width="12" height="40" rx="3" fill="#0B2A8A"/><rect x="126" y="90" width="12" height="40" rx="3" fill="#0B2A8A"/><rect x="52" y="134" width="96" height="10" rx="3" fill="#0B2A8A"/><line x1="50" y1="150" x2="150" y2="50" stroke="#fff" stroke-width="22" stroke-linecap="round"/><line x1="50" y1="150" x2="150" y2="50" stroke="#FF5A64" stroke-width="12" stroke-linecap="round"/></symbol><symbol id="i-bank" viewBox="0 0 200 200" overflow="visible"><circle cx="100" cy="100" r="74" fill="#D4FF4F"/><path d="M100 46 L148 72 H52 Z" fill="#0B2A8A"/><rect x="56" y="76" width="88" height="8" rx="3" fill="#0B2A8A"/><rect x="62" y="90" width="12" height="40" rx="3" fill="#0B2A8A"/><rect x="94" y="90" width="12" height="40" rx="3" fill="#0B2A8A"/><rect x="126" y="90" width="12" height="40" rx="3" fill="#0B2A8A"/><rect x="52" y="134" width="96" height="10" rx="3" fill="#0B2A8A"/><line x1="50" y1="150" x2="150" y2="50" stroke="#fff" stroke-width="22" stroke-linecap="round"/><line x1="50" y1="150" x2="150" y2="50" stroke="#FF5A64" stroke-width="12" stroke-linecap="round"/></symbol><symbol id="s-free" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><circle cx="100" cy="100" r="74"/></g><circle cx="100" cy="100" r="74" fill="#D4FF4F"/><text x="100" y="128" text-anchor="middle" font-family="'M PLUS 1',sans-serif" font-weight="900" font-size="78" fill="#0B2A8A" letter-spacing="-3">¥0</text></symbol><symbol id="i-free" viewBox="0 0 200 200" overflow="visible"><circle cx="100" cy="100" r="74" fill="#D4FF4F"/><text x="100" y="128" text-anchor="middle" font-family="'M PLUS 1',sans-serif" font-weight="900" font-size="78" fill="#0B2A8A" letter-spacing="-3">¥0</text></symbol><symbol id="s-shield" viewBox="0 0 200 200" overflow="visible"><g fill="#fff" stroke="#fff" stroke-width="22" stroke-linejoin="round"><path d="M100 26 L160 48 V98 C160 136 134 160 100 174 C66 160 40 136 40 98 V48Z"/></g><path d="M100 26 L160 48 V98 C160 136 134 160 100 174 C66 160 40 136 40 98 V48Z" fill="#D4FF4F"/><path d="M72 100 L92 120 L130 80" stroke="#0B2A8A" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="i-shield" viewBox="0 0 200 200" overflow="visible"><path d="M100 26 L160 48 V98 C160 136 134 160 100 174 C66 160 40 136 40 98 V48Z" fill="#D4FF4F"/><path d="M72 100 L92 120 L130 80" stroke="#0B2A8A" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>Lilt</span></a>
+  <a class="cta sm" href="https://apps.apple.com/jp/app/id6761905992" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ダウンロード</span></a>
+</header>
+
+<main id="top">
+<svg class="ribbon" id="ribbon" aria-hidden="true"></svg>
+
+<section class="hero">
+  <div class="wrap grid">
+    <div class="copy">
+      <h1>家計簿の<em>新定番</em></h1>
+      <p class="sub">家計簿も、もっとスマートに</p>
+      <p class="lead"><span class="ph">今どきの家計簿は、</span><span class="ph">つけて終わりじゃない。</span><br><span class="ph">金額とカテゴリを</span><span class="ph">選ぶだけで、</span><span class="ph">今月あといくら使えるか、</span><span class="ph">月末にいくらに</span><span class="ph">なりそうかまで</span><span class="ph">見えてくる。</span><br><b><span class="ph">これが、</span><span class="ph">家計簿の新定番。</span></b></p>
+      <div class="actions"><a class="cta " href="https://apps.apple.com/jp/app/id6761905992" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>App Storeでダウンロード</span></a></div>
+      <ul class="chips"><li>広告なし</li><li>銀行連携なし</li><li>基本無料</li></ul>
+    </div>
+    <div class="stage hero-stage" data-rb="1.1,0.05;c,0.55" data-rb-m="1.15,0.08;c,0.5"><div class="phone"><div class="screen"><img src="assets/screens/input.jpg" alt="金額とカテゴリを入力する登録画面" width="660" height="1434" loading="lazy"><i class="island"></i></div><img class="frame" src="assets/iphone-frame.png" alt="" width="720" height="1471"></div><svg class="stk" style="left:76%;top:1%;width:24%;--r:14deg;--d:0s" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-snout"/></svg><svg class="stk" style="left:-2%;top:18%;width:21%;--r:-12deg;--d:0.5s" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-receipt"/></svg><span class="tag" style="left:-2%;top:46%;--r:-8deg;background:#D4FF4F;color:#0B2A8A">かんたん入力</span><svg class="stk" style="left:82%;top:42%;width:18%;--r:12deg;--d:1s" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-coin"/></svg><svg class="stk" style="left:4%;top:76%;width:13%;--r:0deg;--d:0.3s" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-sparkle"/></svg><svg class="stk" style="left:80%;top:76%;width:17%;--r:14deg;--d:0.8s" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-heart"/></svg></div>
+  </div>
+  <i class="rb-anchor" data-rb="0.3,-20px" data-rb-m="0.04,-10px"></i>
+</section>
+
+<section class="feat" id="features">
+  <div class="wrap">
+    <div class="center head reveal" data-rb="0.07,0.6" data-rb-m="-0.02,0.6">
+      <p class="kicker">お金の流れが見える</p>
+      <h2><span class="nw">記録するほど</span><br><em class="nw">お金が見えてくる</em></h2>
+    </div>
+    <div class="bento" data-rb="c,0.15;c,0.85" data-rb-m="c,0.1;c,0.9">
+      <div class="bcol">
+      <article class="tile reveal">
+        <svg class="stk corner" style="--r:12deg" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-chart"/></svg>
+        <p class="tk">日別支出</p>
+        <h3><span class="nw">毎日の支出も</span><br><em class="nw">ひと目で</em></h3>
+        <p class="tx">日ごと・カテゴリごとの支出を、割合でも金額でもグラフに。記録を重ねるほど、グラフが育っていきます。</p>
+        <div class="shot"><div class="well"><div class="device"><div class="bezel"><img src="assets/cards/daily.jpg" alt="カテゴリ別の日別支出グラフ" width="680" height="721" loading="lazy"></div></div></div></div>
+      </article>
+      <article class="tile reveal">
+        <svg class="stk corner" style="--r:-10deg" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-check"/></svg>
+        <p class="tk">予算</p>
+        <h3><span class="nw">予算も、使いすぎも</span><br><em class="nw">ひと目で</em></h3>
+        <p class="tx">カテゴリごとに予算を決めておけば、残りの金額と使った割合がすぐにわかります。</p>
+        <div class="shot"><div class="well"><div class="device"><div class="bezel"><img src="assets/cards/budget.jpg" alt="カテゴリごとの予算の使用状況" width="680" height="675" loading="lazy"></div></div></div><span class="tag" style="right:-3%;top:8%;--r:5deg;background:#D4FF4F;color:#0B2A8A">食費 あと¥17,180</span></div>
+      </article>
+      </div>
+      <div class="bcol">
+      <article class="tile reveal">
+        <svg class="stk corner" style="--r:10deg" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-trend"/></svg>
+        <p class="tk">月末の見込み</p>
+        <h3><span class="nw">月末までの支出を</span><br><em class="nw">見通せる</em></h3>
+        <p class="tx">今のペースから、月末の支出の見込みを予測。使いすぎに早めに気づけます。</p>
+        <div class="shot"><div class="well"><div class="device"><div class="bezel"><img src="assets/cards/forecast.jpg" alt="食費の月末の見込みを表示したグラフ" width="680" height="649" loading="lazy"></div></div></div><span class="tag" style="right:-3%;top:74%;--r:-4deg;background:#fff;color:#1A6DFF">月末見込み ¥86,070</span></div>
+      </article>
+      <article class="tile reveal">
+        <svg class="stk corner" style="--r:-10deg" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-calendar"/></svg>
+        <p class="tk">カレンダー</p>
+        <h3><span class="nw">いつ、何に使ったか</span><br><em class="nw">すぐわかる</em></h3>
+        <p class="tx">日ごとの収支をカレンダーで。支出の多い日は、色の濃さでわかります。</p>
+        <div class="shot"><div class="well"><div class="device"><div class="bezel"><img src="assets/cards/calendar.jpg" alt="日ごとの収支を表示したカレンダー" width="680" height="798" loading="lazy"></div></div></div><span class="tag" style="right:-3%;top:62%;--r:4deg;background:#fff;color:#1FA64A">9/20 給与 +¥410,000</span></div>
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feat trust" id="trust" data-rb="0.94,0" data-rb-m="1.02,0">
+  <div class="wrap">
+    <div class="center head reveal" data-rb="0.93,0.6" data-rb-m="1.02,0.6">
+      <p class="kicker">気軽に、安心して</p>
+      <h2><span class="nw">必要なことだけ</span><br><em class="nw">シンプルに</em></h2>
+    </div>
+    <ul class="tcards reveal" data-rb="c,0.5">
+      <li class="tcard"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#i-shield"/></svg><b>広告なし</b><span>画面に広告は出ません</span></li>
+      <li class="tcard"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#i-bank"/></svg><b>銀行連携なし</b><span>口座やカードをつながずに使えます</span></li>
+      <li class="tcard"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#i-free"/></svg><b>基本無料</b><span>基本の機能は無料で使えます</span></li>
+    </ul>
+    <h3 class="more-head reveal" data-rb="0.07,0.5" data-rb-m="-0.02,0.5">ほかにも</h3>
+    <ul class="mcards" data-rb="c,0.5">
+      <li class="mcard reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9a6 6 0 0 1 10.4-2.4M17 15a6 6 0 0 1-10.4 2.4" /><path d="M17.5 3.5v3.3h-3.3M6.5 20.5v-3.3h3.3"/></svg><div><b>固定費・サブスクを自動登録</b><span>家賃やサブスク、分割払いも毎月自動で記録</span></div></li>
+      <li class="mcard reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg><div><b>場所からカテゴリを選択</b><span>よく記録する場所では、いつものカテゴリを自動で</span></div></li>
+      <li class="mcard reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg><div><b>ウィジェット・Siri</b><span>ホーム画面やショートカットからも記録できる</span></div></li>
+      <li class="mcard reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.6"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg><div><b>Face IDでロック</b><span>Face ID・パスコードでアプリをロック</span></div></li>
+      <li class="mcard reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8Z"/><path d="M14 3.5V8h4.5M9 13.5h6M9 17h4"/></svg><div><b>CSVの書き出し・読み込み</b><span>ほかのアプリからの乗り換えにも</span></div></li>
+      <li class="mcard reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 18.5a4.5 4.5 0 0 1-.6-8.96A5.5 5.5 0 0 1 17.6 9a4.75 4.75 0 0 1-.1 9.5Z"/></svg><div><b>iCloud同期・バックアップ</b><span>Lilt Plus で、iCloud による自動同期</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap center reveal">
+    <img class="final-icon" src="assets/app-icon.png" alt="Lilt のアプリアイコン" width="180" height="180" data-rb="0.93,0.5" data-rb-m="1.02,0.5">
+    <h2>家計簿を、<br class="sp"><em>もっとスマートに</em></h2>
+    <p class="lead">iPhone 向け・基本無料（iOS 18 以降）</p>
+    <div class="actions"><a class="cta " href="https://apps.apple.com/jp/app/id6761905992" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>App Storeでダウンロード</span></a></div>
+  </div>
+  <i class="rb-anchor" data-rb="0.66,-40px;-0.12,-10px" data-rb-m="0.7,-36px;-0.25,-6px"></i>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/app-icon.png" alt="" width="28" height="28"><span>Lilt</span></a>
+    <nav><a href="https://apps.apple.com/jp/app/id6761905992" rel="noopener">App Store</a><a href="https://kojimayutaro.github.io/lilt-privacy-policy/">プライバシーポリシー</a></nav>
+    <small>Lilt Plus（iCloud 同期・共有家計簿の作成）は任意のサブスクリプションです。</small>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const main = document.getElementById('top');
+  const svg = document.getElementById('ribbon');
+  const NS = 'http://www.w3.org/2000/svg';
+  const smooth = p => {
+    let d = `M${p[0][0]} ${p[0][1]}`;
+    for (let i = 0; i < p.length - 1; i++) {
+      const p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2;
+      d += ` C${p1[0] + (p2[0] - p0[0]) / 6} ${p1[1] + (p2[1] - p0[1]) / 6} ${p2[0] - (p3[0] - p1[0]) / 6} ${p2[1] - (p3[1] - p1[1]) / 6} ${p2[0]} ${p2[1]}`;
+    }
+    return d;
+  };
+  const draw = () => {
+    const narrow = innerWidth < 900;
+    const W = main.clientWidth, H = main.scrollHeight, top = main.getBoundingClientRect().top + scrollY;
+    const pts = [];
+    document.querySelectorAll('[data-rb]').forEach(el => {
+      const spec = (narrow && el.dataset.rbM) || el.dataset.rb;
+      const r = el.getBoundingClientRect(), y0 = r.top + scrollY - top;
+      spec.split(';').forEach(s => {
+        const [x, y] = s.split(',');
+        pts.push([x === 'c' ? r.left + r.width / 2 : parseFloat(x) * W, y0 + (y.endsWith('px') ? parseFloat(y) : parseFloat(y) * r.height)]);
+      });
+    });
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.style.height = H + 'px';
+    const d = smooth(pts), k = narrow ? .6 : 1;
+    svg.innerHTML = `<path d="${d}" stroke="#63B0FF" stroke-width="${150 * k}" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/>`
+      + `<path d="${d}" transform="translate(${46 * k} ${70 * k})" stroke="#D4FF4F" stroke-width="${26 * k}" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+  };
+  let raf = 0;
+  const queue = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(draw); };
+  addEventListener('resize', queue);
+  addEventListener('load', queue);
+  if (document.fonts) document.fonts.ready.then(queue);
+  if ('ResizeObserver' in window) new ResizeObserver(queue).observe(main);
+  draw();
+})();
+</script>
+<script>
+(() => {
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 24);
+  addEventListener('scroll', onScroll, {passive: true}); onScroll();
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), {rootMargin: '0px 0px -12% 0px'});
+  els.forEach(e => io.observe(e));
+})();
+</script>
+</body>
+</html>

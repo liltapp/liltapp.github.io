@@ -1,0 +1,329 @@
+/* Lilt LP — same visual language as the App Store creatives (app-store-assets/six) */
+:root {
+  --blue-1: #3393FF;
+  --blue-2: #1A6DFF;
+  --blue-3: #1253E6;
+  --lime: #D4FF4F;
+  --navy: #0B2A8A;
+  --ink: #0B1020;
+  --white-soft: rgba(255, 255, 255, .9);
+  --shadow-ink: rgba(0, 20, 80, .45);
+  --font: 'M PLUS 1', 'Hiragino Sans', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-synthesis: none; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font);
+  color: #fff;
+  background: var(--blue-2) linear-gradient(170deg, var(--blue-1) 0%, var(--blue-2) 30%, var(--blue-3) 100%);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+ul { list-style: none; }
+em { font-style: normal; color: var(--lime); }
+
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.wrap { position: relative; z-index: 1; width: 100%; max-width: 1120px; margin-inline: auto; padding-inline: 20px; }
+.center { text-align: center; }
+.sp { display: none; }
+.nw { white-space: nowrap; }
+.ph { display: inline-block; }
+.lead b { font-weight: 800; color: #fff; }
+
+/* ---------------------------------------------------------------- type */
+h1, h2 {
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: .01em;
+  text-shadow: 0 8px 26px rgba(0, 25, 100, .28);
+}
+h1 { font-size: clamp(44px, 11.5vw, 104px); line-height: 1.08; }
+h2 { font-size: clamp(28px, 7.4vw, 52px); }
+h3 { font-size: clamp(22px, 4.6vw, 28px); font-weight: 900; margin-bottom: 18px; }
+.kicker {
+  color: var(--lime);
+  font-weight: 800;
+  font-size: clamp(14px, 3.6vw, 18px);
+  letter-spacing: .06em;
+  margin-bottom: 12px;
+}
+.sub { margin-top: 14px; font-weight: 700; font-size: clamp(18px, 4.6vw, 26px); color: var(--white-soft); }
+.lead {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: clamp(15px, 3.9vw, 17px);
+  line-height: 1.95;
+  color: var(--white-soft);
+  max-width: 30em;
+}
+.chips li::before {
+  content: "";
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.5 12.5l3.6 3.6 7.4-8' fill='none' stroke='%230B2A8A' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 76% no-repeat;
+}
+
+/* ---------------------------------------------------------------- buttons */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 30px 16px 24px;
+  border-radius: 999px;
+  border: 4px solid #fff;
+  background: var(--lime);
+  color: var(--navy);
+  font-weight: 900;
+  font-size: 18px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 16px 28px -10px var(--shadow-ink);
+  transition: translate .2s ease, box-shadow .2s ease;
+}
+.cta svg { width: 24px; height: 24px; }
+.cta:hover { translate: 0 -2px; box-shadow: 0 20px 32px -10px var(--shadow-ink); }
+.cta:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; }
+.cta.sm { padding: 8px 18px 8px 14px; font-size: 15px; border-width: 3px; gap: 6px; box-shadow: 0 8px 18px -8px var(--shadow-ink); }
+.cta.sm svg { width: 18px; height: 18px; }
+.actions { margin-top: 30px; }
+
+.chips { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+.chips li {
+  position: relative;
+  padding: 7px 16px 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .14);
+  border: 1.5px solid rgba(255, 255, 255, .32);
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------------------------------------------------------------- nav */
+.nav {
+  position: fixed;
+  z-index: 10;
+  inset: 0 0 auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(12px + env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) 12px max(20px, env(safe-area-inset-left));
+  transition: background .3s ease, box-shadow .3s ease;
+}
+.nav.scrolled {
+  background: rgba(22, 96, 245, .78);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .14);
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 900; font-size: 22px; }
+/* the icon PNG already has its own squircle corners: shadow with a filter, never clip or ring it */
+.brand img { width: 36px; height: 36px; filter: drop-shadow(0 4px 8px rgba(0, 20, 80, .3)); }
+
+/* ---------------------------------------------------------------- sections */
+main { position: relative; overflow: hidden; }
+section { position: relative; }
+/* one ribbon behind the whole page; the path is laid out by script from data-rb anchors */
+.ribbon { position: absolute; left: 0; top: 0; width: 100%; z-index: 0; pointer-events: none; overflow: visible; }
+.rb-anchor { position: absolute; left: 0; bottom: 0; height: 0; }
+.wave { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.hero { padding: calc(110px + env(safe-area-inset-top)) 0 40px; }
+.feat { padding: 64px 0; }
+.head { margin-bottom: 36px; }
+.final { padding: 96px 0 110px; }
+
+.grid { display: grid; gap: 40px; align-items: center; }
+.copy { text-align: center; }
+.copy .lead { margin-inline: auto; }
+.copy .chips, .copy .actions { justify-content: center; }
+
+/* ---------------------------------------------------------------- phone + stickers */
+.stage { position: relative; width: min(100%, 430px); margin-inline: auto; padding: 4% 14% 6%; }
+.phone { position: relative; width: 100%; aspect-ratio: 1080 / 2206; filter: drop-shadow(0 30px 36px var(--shadow-ink)); }
+/* screen box inside iphone-frame.png: x54 y49 w973 h2115 of 1080x2206, corner radius 140 */
+.screen {
+  position: absolute;
+  left: 5%; top: 2.2212%;
+  width: 90.0926%; height: 95.8749%;
+  border-radius: 14.39% / 6.62%;
+  overflow: hidden;
+  background: #000;
+}
+.screen img { width: 100%; }
+/* Dynamic Island at iPhone 18 Pro proportions (23.55% / 9.12% / 3.48% of the screen width) */
+.island {
+  position: absolute;
+  left: 50%; top: 1.601%;
+  width: 23.55%;
+  aspect-ratio: 284 / 110;
+  translate: -50% 0;
+  border-radius: 999px;
+  background: #000;
+}
+.frame { position: absolute; inset: 0; width: 100%; }
+
+.stk {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  rotate: var(--r, 0deg);
+  filter: drop-shadow(0 8px 10px rgba(0, 20, 80, .32));
+  animation: bob 5.5s ease-in-out infinite;
+  animation-delay: calc(-1 * var(--d, 0s));
+}
+.tag {
+  position: absolute;
+  z-index: 3;
+  rotate: var(--r, 0deg);
+  padding: .5em 1.05em;
+  border-radius: 999px;
+  border: 3.5px solid #fff;
+  font-weight: 900;
+  font-size: clamp(13px, 3.5vw, 19px);
+  white-space: nowrap;
+  box-shadow: 0 12px 20px -8px var(--shadow-ink);
+}
+@keyframes bob { 50% { translate: 0 -8px; } }
+
+/* ---------------------------------------------------------------- feature tiles */
+.bento, .bcol { display: grid; gap: 20px; }
+.tile {
+  position: relative;
+  padding: 26px 22px 22px;
+  border-radius: 32px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 30px 50px -28px var(--shadow-ink);
+}
+.tile .tk { font-weight: 800; font-size: 14px; letter-spacing: .06em; color: var(--blue-2); }
+.tile h3 { margin: 8px 0 0; font-size: clamp(24px, 6.4vw, 30px); line-height: 1.3; }
+.tile h3 em { color: var(--blue-2); }
+.tile .tx { margin-top: 12px; font-size: 15px; font-weight: 500; line-height: 1.85; color: #5B6378; }
+.shot { position: relative; margin-top: 20px; }
+.well { overflow: hidden; border-radius: 24px; background: #F2F2F4; }
+/* close-up of the phone like the tips images: silver edge 2.8% + black bezel 1.9% of the device width */
+.device {
+  width: min(84%, 340px);
+  margin-inline: auto;
+  padding: 0 2.8%;
+  background: linear-gradient(90deg, #939499 0%, #E7E6EB 2.8%, #EBEBED 97.2%, #9B9CA0 100%);
+  box-shadow: 0 0 34px rgba(0, 0, 0, .1), 16px 0 30px -12px rgba(0, 0, 0, .22);
+}
+.bezel { padding: 0 1.9%; background: #050505; }
+.bezel img { width: 100%; }
+.shot .tag { font-size: clamp(13px, 3.4vw, 16px); }
+.shot img { display: block; }
+.stk.corner { top: -26px; right: -10px; width: 86px; }
+
+/* ---------------------------------------------------------------- trust */
+.tcards {
+  margin: 34px auto 0;
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.tcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 14px 8px 18px;
+  border-radius: 26px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 20px 36px -18px var(--shadow-ink);
+}
+.tcard svg { width: clamp(54px, 15vw, 84px); height: auto; }
+.tcard b { margin-top: 4px; font-weight: 900; font-size: clamp(14px, 3.8vw, 20px); white-space: nowrap; }
+.tcard span { margin-top: 6px; font-size: 13px; font-weight: 500; color: #5B6378; line-height: 1.6; display: none; }
+.more-head { margin: 60px 0 18px; text-align: center; }
+.mcards { display: grid; gap: 12px; }
+.mcard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 22px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 18px 30px -20px var(--shadow-ink);
+}
+.mcard svg {
+  flex: none;
+  width: 48px; height: 48px;
+  padding: 11px;
+  border-radius: 50%;
+  background: var(--lime);
+  fill: none;
+  stroke: var(--navy);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mcard b { display: block; font-weight: 900; font-size: 15.5px; }
+.mcard span { display: block; margin-top: 2px; font-size: 13.5px; font-weight: 500; color: #5B6378; line-height: 1.55; }
+
+/* ---------------------------------------------------------------- final */
+.final-icon {
+  width: clamp(108px, 28vw, 150px);
+  margin: 0 auto 30px;
+  rotate: -6deg;
+  filter: drop-shadow(0 20px 26px var(--shadow-ink));
+}
+.final .lead { margin-inline: auto; }
+
+/* ---------------------------------------------------------------- footer */
+.foot { background: #0D3FBF; padding: 36px 0 calc(36px + env(safe-area-inset-bottom)); }
+.foot .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; }
+.foot .brand { font-size: 18px; }
+.foot .brand img { width: 28px; height: 28px; }
+.foot nav { display: flex; flex-wrap: wrap; gap: 8px 22px; font-weight: 700; font-size: 14px; }
+.foot nav a { text-decoration: none; opacity: .9; }
+.foot nav a:hover { text-decoration: underline; }
+.foot small { flex-basis: 100%; font-size: 12px; color: rgba(255, 255, 255, .7); line-height: 1.7; }
+
+/* ---------------------------------------------------------------- reveal */
+.js .reveal { opacity: 0; translate: 0 28px; transition: opacity .8s ease, translate .8s cubic-bezier(.2, .7, .2, 1); }
+.js .reveal.in { opacity: 1; translate: 0 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .stk { animation: none; }
+  .js .reveal { opacity: 1; translate: none; transition: none; }
+}
+
+@media (max-width: 420px) {
+  .sp { display: inline; }
+}
+
+/* ---------------------------------------------------------------- desktop */
+@media (min-width: 900px) {
+  .hero { min-height: min(100vh, 980px); display: flex; align-items: center; padding: 120px 0 60px; }
+  .feat { padding: 100px 0; }
+  .head { margin-bottom: 56px; }
+  .bento { grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  .bcol { gap: 28px; }
+  .bcol + .bcol { margin-top: 90px; }
+  .tile { padding: 34px 32px 30px; }
+  .stk.corner { width: 104px; top: -34px; right: -18px; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .wave.side { inset: 0 0 0 40%; }
+  .wave.side.flip { inset: 0 40% 0 0; }
+  .copy, .trust .copy { text-align: left; }
+  .copy .lead { margin-inline: 0; }
+  .copy .chips, .copy .actions { justify-content: flex-start; }
+  .hero .copy { padding-bottom: 40px; }
+  .stage { width: min(100%, 470px); }
+  .tcard { padding: 22px 18px 24px; }
+  .tcard span { display: block; }
+  .mcards { grid-template-columns: repeat(3, 1fr); }
+  .mcard { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; }
+  .foot nav { margin-left: auto; }
+}
